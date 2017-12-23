@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <ImageView
+        android:id="@+id/pop_goodiamge"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_toRightOf="@id/pop_goodiamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/goods_count"
+        android:layout_toRightOf="@id/pop_goodiamge"
+        android:layout_below="@id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/good_totalprice"
+        android:layout_toRightOf="@id/pop_goodiamge"
+        android:layout_below="@id/goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/pop_quding"
+        android:text="确定"
+        android:textColor="#FFF"
+        android:background="#FF6800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_above="@id/pop_quding"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:text="购买数量"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/pop_jia"
+        android:layout_above="@id/pop_quding"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/jia"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <ImageView
+        android:id="@+id/pop_jian"
+        android:layout_above="@id/pop_quding"
+        android:layout_toLeftOf="@id/pop_jia"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/jian"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/pop_goodcount"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@id/pop_jia"
+        android:text="1"
+        android:textSize="20dp"
+        android:layout_above="@id/pop_quding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

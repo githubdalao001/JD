@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.mytaobao.BianjiActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="BianBack"
+            android:paddingLeft="10dp"
+            android:background="#FFF"
+            android:text="返回上一级"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Bianji_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="保存"
+            android:textColor="#FF5805"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="收货人"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ture_name"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="联系电话"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/true_phone"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="所在地址"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/bianji_chengshi"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="街道"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/bianji_jiedao"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/bianji_xiangxi"
+        android:textSize="10dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:hint="详细地址"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:onClick="BianJiShanChu"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:paddingLeft="10dp"
+        android:textColor="#f00"
+        android:textSize="20sp"
+        android:text="删除地址"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20sp"
+        android:text="欢迎使用我的淘宝手机客户端,该应用使用完全免费,在使用过程中可能产生流量费用,流量费用请咨询当地运营商,是否允许该应用产生连接"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <CheckBox
+        android:id="@+id/dialog_check"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="不在显示提醒"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingRight="50dp"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/dialog_jujue"
+            android:text="拒绝"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:textColor="#FF5E14"
+            android:id="@+id/dialog_tongyi"
+            android:text="同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

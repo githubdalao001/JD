@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.mytaobao.TaoLoginActivity">
+
+    <ImageView
+        android:onClick="tao_login_fan"
+        android:id="@+id/tao_login_fanhui"
+        android:background="@mipmap/login_fan"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_alignParentRight="true"
+        android:text="帮助"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"/>
+    <ImageView
+        android:id="@+id/tao_login_image"
+        android:background="@mipmap/login_tao"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tao_login_fanhui"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/tao_login_editetext"
+        android:hint="手机号/会员名/邮箱"
+        android:id="@+id/tao_login_name"
+        android:layout_below="@id/tao_login_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/tao_login_editetext"
+        android:hint="请输入密码"
+        android:id="@+id/tao_login_pwd"
+        android:layout_below="@id/tao_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:onClick="tao_login_wangjjmima"
+        android:id="@+id/tao_login_wangji"
+        android:layout_marginTop="15dp"
+        android:text="忘记密码"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tao_login_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/tao_login_showpwd"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tao_login_pwd"
+        android:layout_toLeftOf="@id/tao_login_wangji"
+        android:background="@drawable/login_button"
+        android:text="显示密码"
+        android:layout_width="80dp"
+        android:layout_height="30dp" />
+    <Button
+        android:onClick="tao_login_login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button"
+        android:layout_below="@id/tao_login_wangji"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

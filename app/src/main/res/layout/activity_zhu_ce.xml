@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.mytaobao.ZhuCeActivity">
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/zhuce_zhanghao"
+        android:hint="输入账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/zhuce_zhanghao"
+        android:id="@+id/zhuce_mima"
+        android:hint="输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/zhuce_mima"
+        android:id="@+id/zhuce_mima_zaici"
+        android:hint="再次输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/zhuce_mima_zaici"
+        android:id="@+id/zhuce_youxiang"
+        android:hint="输入邮箱"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="zhuce"
+        android:background="@drawable/zhuce_button2"
+        android:text="注册"
+        android:textColor="#FFF"
+        android:layout_below="@id/zhuce_youxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

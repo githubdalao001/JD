@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:background="#FAECE0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ding_zaixian"
+            android:layout_gravity="center_vertical"
+            android:text="在线支付金额:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ding_pay_anount"
+            android:textColor="#f00"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="asdasd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:text="待付款"
+            android:background="#FB6E52"
+            android:id="@+id/ding_state_desc"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ding_order_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ding_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bwie.mytaobao.myview.MyListView
+        android:id="@+id/ding_order_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"></com.bwie.mytaobao.myview.MyListView>
+</LinearLayout>

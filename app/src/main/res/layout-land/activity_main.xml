@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.mytaobao.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></LinearLayout>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <RadioButton
+            android:id="@+id/main_shouye"
+            android:padding="10dp"
+            android:button="@null"
+            android:background="@mipmap/zhuye_false"
+            android:layout_width="80dp"
+            android:layout_height="60dp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <RadioButton
+            android:id="@+id/main_weitao"
+            android:button="@null"
+            android:padding="10dp"
+            android:background="@mipmap/weitao_false"
+            android:layout_width="80dp"
+            android:layout_height="60dp"  />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <RadioButton
+            android:id="@+id/main_xiaoxi"
+            android:button="@null"
+            android:padding="10dp"
+            android:background="@mipmap/xiaoxi_false"
+            android:layout_width="80dp"
+            android:layout_height="60dp"  />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <RadioButton
+            android:id="@+id/main_gouwu"
+            android:button="@null"
+            android:padding="10dp"
+            android:background="@mipmap/gouwu_false"
+            android:layout_width="80dp"
+            android:layout_height="60dp"  />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <RadioButton
+            android:id="@+id/main_wode"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/wode_false"
+            android:button="@null"
+            android:padding="10dp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:id="@+id/shopingcar_checebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shopingcar_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/shopingcar_checebox"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/shopingcar_image"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:gravity="top"
+            android:id="@+id/shopingcar_storename"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/shopingcar_goodname"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:gravity="bottom"
+            android:id="@+id/shopingcar_goodprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:textSize="10dp"
+        android:id="@+id/shopingcar_goodcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

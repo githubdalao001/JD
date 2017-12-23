@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/popHead"
+            android:background="#FFF"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="修改头像"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:background="#FFF"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/paizhao"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/paizhao"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#FFF"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/xiangce"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/xiangce"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

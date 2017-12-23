@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:numColumns="5"
+        android:id="@+id/mygridview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></GridView>
+    <LinearLayout
+        android:id="@+id/homepager_taobaotoutiao_textrong"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/tbtt" />
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp">
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/homepager_taobaotoutiao_texttop"
+                android:text="asdasdasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:mvAnimDuration="1000"
+                app:mvDirection="bottom_to_top"
+                app:mvInterval="3000"
+                app:mvTextColor="#000"
+                app:mvTextSize="20sp"
+                app:mvSingleLine="true"/>
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/homepager_taobaotoutiao_textbom"
+                android:text="asdasdasd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:mvAnimDuration="1000"
+                app:mvDirection="bottom_to_top"
+                app:mvInterval="3000"
+                app:mvTextColor="#000"
+                app:mvTextSize="20sp"
+                app:mvSingleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

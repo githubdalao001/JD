@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:zdy="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/homepager_sousuo_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.bwie.mytaobao.myview.MyViews
+            android:layout_gravity="center"
+            android:onClick="homePager_saoyisao"
+            zdy:iamge="@mipmap/saoyisao"
+            zdy:text="扫一扫"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"></com.bwie.mytaobao.myview.MyViews>
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/homePager_ed_sousuo"
+            android:drawableLeft="@mipmap/fangfajing"
+            android:drawableRight="@mipmap/xiangji"
+            android:hint="搜索"
+            android:textColorHint="#FFF"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <com.bwie.mytaobao.myview.MyViews
+            android:layout_gravity="center"
+            android:onClick="homePager_huiyuanma"
+            zdy:text="会员码"
+            zdy:iamge="@mipmap/huiyuanma"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"></com.bwie.mytaobao.myview.MyViews>
+    </LinearLayout>
+
+    <com.limxing.xlistview.view.XListView
+        android:id="@+id/HomePager_xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="4dp"
+        android:scrollbars="none"></com.limxing.xlistview.view.XListView>
+
+</LinearLayout>

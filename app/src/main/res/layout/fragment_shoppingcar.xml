@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@drawable/lijigoumai"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/shopingcar_title"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF"
+            android:text="购物车"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/top"
+        android:id="@+id/shopingcar_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        ></ListView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <CheckBox
+            android:id="@+id/shopingcar_quanxuan"
+            android:text="全选"
+            android:textSize="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shopingcar_sumprice"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:text="结算:￥0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/shopingcar_jiesuan"
+            android:textColor="#FFF"
+            android:background="@drawable/lijigoumai"
+            android:text="结算(0)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
